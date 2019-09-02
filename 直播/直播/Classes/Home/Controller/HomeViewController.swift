@@ -8,9 +8,17 @@
 
 import UIKit
 
+private let kTitleViewH : CGFloat = 40
 
 class HomeViewController: UIViewController {
 
+    private lazy var pageTitle:PageTitleView = {
+        let titleFrame = CGRect(x: 0, y: KStatusBarH + KNavigationBarH, width: KScreenW, height: kTitleViewH)
+        let titles = ["推荐","游戏","娱乐","趣玩"]
+        let titleView = PageTitleView(frame: titleFrame, titles: titles)
+        return titleView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +30,11 @@ extension HomeViewController{
     
     private func setupUI(){
     
+        automaticallyAdjustsScrollViewInsets =  false
+        
         setUpNavigationBar()
+        
+        view.addSubview(pageTitle)
         
     }
     
@@ -41,7 +53,6 @@ extension HomeViewController{
         let qrcdeItem =  UIBarButtonItem(imageName: "Image_scan", highImageName: "Image_scan_click", size: size);
         navigationItem.rightBarButtonItems = [historyItem,searchItem,qrcdeItem]
 
-        var stringValue : Optional<String>
 
     }
     

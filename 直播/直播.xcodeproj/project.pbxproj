@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D70B64A231D08DB00395303 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D70B649231D08DB00395303 /* PageTitleView.swift */; };
+		8D70B64C231D0B4C00395303 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D70B64B231D0B4C00395303 /* Common.swift */; };
 		8DA31CAE231A03B400D57ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA31CAD231A03B400D57ECE /* AppDelegate.swift */; };
 		8DA31CB8231A03B700D57ECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA31CB6231A03B700D57ECE /* LaunchScreen.storyboard */; };
 		8DA31CC0231A0C5800D57ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA31CBF231A0C5800D57ECE /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D70B649231D08DB00395303 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		8D70B64B231D0B4C00395303 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		8DA31CAA231A03B400D57ECE /* 直播.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "直播.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA31CAD231A03B400D57ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DA31CB7231A03B700D57ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,11 +83,11 @@
 			isa = PBXGroup;
 			children = (
 				8DA31CC2231A0F0000D57ECE /* Home */,
-				8DA31CC3231A0F0000D57ECE /* Tools */,
 				8DA31CC4231A0F0000D57ECE /* Follow */,
 				8DA31CC5231A0F0000D57ECE /* Profile */,
 				8DA31CC6231A0F0000D57ECE /* Live */,
 				8DA31CC7231A0F0000D57ECE /* Main */,
+				8DA31CC3231A0F0000D57ECE /* Tools */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -102,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				8DA31CEF231A384700D57ECE /* Extension */,
+				8D70B64B231D0B4C00395303 /* Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 		8DA31CE9231A21BE00D57ECE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8D70B649231D08DB00395303 /* PageTitleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -271,7 +277,9 @@
 			files = (
 				8DA31CE3231A1AA600D57ECE /* MainTabBarController.swift in Sources */,
 				8DA31CAE231A03B400D57ECE /* AppDelegate.swift in Sources */,
+				8D70B64A231D08DB00395303 /* PageTitleView.swift in Sources */,
 				8DA31CF1231A387E00D57ECE /* UIBarButtonItem-Extension.swift in Sources */,
+				8D70B64C231D0B4C00395303 /* Common.swift in Sources */,
 				8DA31CED231A23C600D57ECE /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
